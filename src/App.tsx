@@ -5,12 +5,12 @@ import { Home } from "./pages/Home";
 
 export function App() {
   return (
-    <div className="text-default flex flex-col min-h-screen">
+    <div className="antialiased text-default flex flex-col w-screen min-h-screen overflow-x-hidden">
       <Header />
-      <Links />
-      <main className="px-[150px] max-w-[1600px] mx-auto">
+      <main className="lg:px-[150px] max-w-[1600px] mx-auto">
         <Home />
       </main>
+      <Links />
       <Footer />
     </div>
   );

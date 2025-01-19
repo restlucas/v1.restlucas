@@ -2,7 +2,7 @@ import { GithubLogo, InstagramLogo, LinkedinLogo } from "@phosphor-icons/react";
 
 export function Links() {
   return (
-    <div className="fixed left-10 bottom-0 z-10 flex flex-col items-center justify-center gap-4">
+    <div className="block lg:fixed left-10 bottom-0 z-10 flex lg:flex-col items-center justify-center gap-4">
       <a
         target="_blank"
         href="https://www.linkedin.com/in/restlucas"
@@ -33,7 +33,7 @@ export function Links() {
           className="duration-300 group-hover:fill-blue-vibrant"
         />
       </a>
-      <div className="w-px h-[90px] bg-blue-vibrant block" />
+      <div className="hidden lg:block w-px h-[90px] bg-blue-vibrant" />
     </div>
   );
 }

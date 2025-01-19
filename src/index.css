@@ -45,6 +45,7 @@ body {
   background-color: var(--background);
   font-family: "Calibre", sans-serif;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar-thumb {
