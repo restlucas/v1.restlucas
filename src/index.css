@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #161618;
+  --secondary: #1b1b1f;
+  --tertiary: #212131;
+  --blue-vibrant: #22d1ee;
+}
+
+@font-face {
+  font-family: "SFMono";
+  src: url("./assets/fonts/SFMono-Regular.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SFMono";
+  src: url("./assets/fonts/SFMono-Bold.otf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Calibre";
+  src: url("./assets/fonts/Calibre-Regular.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Calibre";
+  src: url("./assets/fonts/Calibre-Bold.otf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  font-family: "Calibre", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+  background-color: var(--blue-vibrant);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 9999px;
+  background-color: var(--secondary);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
