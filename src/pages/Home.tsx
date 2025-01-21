@@ -358,12 +358,12 @@ export function Home() {
               <div className="block lg:hidden">
                 <a
                   target="_blank"
-                  href="https://couplespace.vercel.app/"
+                  href="https://bookly-azure.vercel.app/"
                   className="text-2xl font-bold duration-300 hover:text-blue-vibrant"
                 >
                   Bookly
                 </a>
-                <a target="_blank" href="https://couplespace.vercel.app/">
+                <a target="_blank" href="https://bookly-azure.vercel.app/">
                   <img
                     src="./bookly.png"
                     className="rounded-t-md lg:rounded-t-none lg:rounded-md grayscale duration-300 hover:grayscale-0 w-full h-auto"
@@ -404,7 +404,7 @@ export function Home() {
                 <div className="h-full flex flex-col items-start justify-center absolute z-10 left-10 top-0 bottom-0">
                   <a
                     target="_blank"
-                    href="https://couplespace.vercel.app/"
+                    href="https://bookly-azure.vercel.app/"
                     className="text-2xl font-bold duration-300 hover:text-blue-vibrant"
                   >
                     Bookly
