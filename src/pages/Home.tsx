@@ -441,7 +441,7 @@ export function Home() {
                 </div>
                 <a
                   target="_blank"
-                  href="https://couplespace.vercel.app/"
+                  href="https://bookly-azure.vercel.app/"
                   className="lg:col-start-2"
                 >
                   <img
