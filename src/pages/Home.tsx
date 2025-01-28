@@ -197,17 +197,20 @@ export function Home() {
                 <li className="flex items-center justify-start gap-2 pl-7 relative">
                   <span className="before:content-['▹'] before:absolute before:left-0">
                     Developed and maintained the main system using on the branch
-                    using PHP, React, Semantic UI, jQuery and other libraries.
+                    using PHP, React, Semantic UI, jQuery, Apexcharts and other
+                    libraries.
                   </span>
                 </li>
                 <li className="flex items-center justify-start gap-2 pl-7 relative">
                   <span className="before:content-['▹'] before:absolute before:left-0">
-                    Handling external APIs
+                    Analysis, integration, and manipulation of data from
+                    external APIs.
                   </span>
                 </li>
                 <li className="flex items-center justify-start gap-2 pl-7 relative">
                   <span className="before:content-['▹'] before:absolute before:left-0">
-                    Code versioning
+                    Code versioning management and control, ensuring development
+                    integrity and organization.
                   </span>
                 </li>
               </ul>
@@ -227,17 +230,20 @@ export function Home() {
               <ul className="mt-5 space-y-2">
                 <li className="flex items-center justify-start gap-2 pl-7 relative">
                   <span className="before:content-['▹'] before:absolute before:left-0">
-                    Front-end development using React and Tailwind.
+                    Development of modern and dynamic interfaces using React and
+                    complementary libraries.
                   </span>
                 </li>
                 <li className="flex items-center justify-start gap-2 pl-7 relative">
                   <span className="before:content-['▹'] before:absolute before:left-0">
-                    Maintained of existing systems using PHP
+                    Updating and optimizing existing systems, ensuring
+                    performance and usability.
                   </span>
                 </li>
                 <li className="flex items-center justify-start gap-2 pl-7 relative">
                   <span className="before:content-['▹'] before:absolute before:left-0">
-                    Maintained of CMS portal using Joomla
+                    Maintenance and customization of CMS platforms, focusing on
+                    Joomla, to meet the specific needs of projects.
                   </span>
                 </li>
               </ul>
