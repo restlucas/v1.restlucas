@@ -266,6 +266,142 @@ export function Home() {
           </div>
 
           <div className="w-full flex flex-col gap-32">
+            {/* What's New */}
+            <div className="relative">
+              <div className="block lg:hidden">
+                <a
+                  target="_blank"
+                  href="https://whats-new-rust.vercel.app/"
+                  className="text-2xl font-bold duration-300 hover:text-blue-vibrant"
+                >
+                  What's New
+                </a>
+                <a target="_blank" href="https://whats-new-rust.vercel.app/">
+                  <img
+                    src="./whatsnew.png"
+                    className="rounded-t-md lg:rounded-t-none lg:rounded-md grayscale duration-300 hover:grayscale-0 w-full h-auto"
+                  />
+                </a>
+                <div className="p-6 bg-secondary rounded-b-md w-full lg:w-[550px] shadow-lg">
+                  The news system allows reading, creating, editing, and
+                  deleting news articles, organized by teams. Each team manages
+                  its members and can invite new ones. Statistics include like
+                  rate, views, most popular news, and top contributors.
+                </div>
+                <div className="flex flex-wrap items-center justify-center gap-4 mt-4 text-sm">
+                  <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
+                    React
+                  </span>
+                  <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
+                    Vite
+                  </span>
+                  <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
+                    Zod
+                  </span>
+                  <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
+                    TypeScript
+                  </span>
+                  <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
+                    React Query
+                  </span>
+                  <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
+                    Node
+                  </span>
+                  <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
+                    TailwindCSS
+                  </span>
+                  <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
+                    Prisma
+                  </span>
+                  <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
+                    Firebase
+                  </span>
+                  <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
+                    API Rest
+                  </span>
+                  <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
+                    Nodemailer
+                  </span>
+                  <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
+                    JWT Authentication
+                  </span>
+                  <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
+                    Theme toggle
+                  </span>
+                </div>
+              </div>
+
+              <div className="hidden lg:grid grid-cols-2">
+                <div className="h-full flex flex-col items-start justify-center absolute z-10 left-10 top-0 bottom-0">
+                  <a
+                    target="_blank"
+                    href="https://whats-new-rust.vercel.app/"
+                    className="text-2xl font-bold duration-300 hover:text-blue-vibrant"
+                  >
+                    What's New
+                  </a>
+                  <div className="p-6 bg-secondary rounded-md w-[550px] shadow-lg">
+                    The news system allows reading, creating, editing, and
+                    deleting news articles, organized by teams. Each team
+                    manages its members and can invite new ones. Statistics
+                    include like rate, views, most popular news, and top
+                    contributors.
+                  </div>
+                  <div className="max-w-[550px] flex flex-wrap items-center justify-start gap-4 mt-4 text-sm">
+                    <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
+                      React
+                    </span>
+                    <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
+                      Vite
+                    </span>
+                    <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
+                      Zod
+                    </span>
+                    <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
+                      TypeScript
+                    </span>
+                    <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
+                      React Query
+                    </span>
+                    <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
+                      Node
+                    </span>
+                    <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
+                      TailwindCSS
+                    </span>
+                    <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
+                      Prisma
+                    </span>
+                    <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
+                      Firebase
+                    </span>
+                    <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
+                      API Rest
+                    </span>
+                    <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
+                      Nodemailer
+                    </span>
+                    <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
+                      JWT Authentication
+                    </span>
+                    <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
+                      Theme toggle
+                    </span>
+                  </div>
+                </div>
+                <a
+                  target="_blank"
+                  href="https://whats-new-rust.vercel.app/"
+                  className="lg:col-start-2"
+                >
+                  <img
+                    src="./whatsnew.png"
+                    className="h-full w-full rounded-md grayscale duration-300 hover:grayscale-0"
+                  />
+                </a>
+              </div>
+            </div>
+
             {/* Couplespace */}
             <div className="relative">
               <div className="block lg:hidden">
