@@ -420,7 +420,7 @@ export function Home() {
                     Firebase
                   </span>
                   <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
-                    Intl
+                    i18n
                   </span>
                 </div>
               </div>
@@ -466,7 +466,7 @@ export function Home() {
                       Firebase
                     </span>
                     <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
-                      Intl
+                      i18n
                     </span>
                   </div>
                 </div>
