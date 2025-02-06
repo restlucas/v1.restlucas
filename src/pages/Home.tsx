@@ -446,6 +446,9 @@ export function Home() {
                   <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
                     Firebase
                   </span>
+                  <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
+                    Intl
+                  </span>
                 </div>
               </div>
 
@@ -491,6 +494,9 @@ export function Home() {
                     </span>
                     <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
                       Firebase
+                    </span>
+                    <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
+                      Intl
                     </span>
                   </div>
                 </div>
