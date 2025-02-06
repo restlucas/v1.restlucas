@@ -1,0 +1,74 @@
+{
+  "locale": "pt",
+  "navigation": {
+    "about": "Sobre",
+    "experience": "Experiência",
+    "projects": "Projetos",
+    "contact": "Contato",
+    "resume": "Currículo"
+  },
+  "hero": {
+    "presentation": "Oi, meu nome é",
+    "role": "Sou Desenvolvedor Front-End",
+    "description": "Construo coisas para a web e atualmente estou procurando um novo desafio para me recolocar no mercado de trabalho!"
+  },
+  "about": {
+    "title": "Sobre",
+    "paragraphOne": "Olá! Meu nome é Lucas e eu gosto de criar coisas visuais. Meu interesse pelo desenvolvimento web começou em 2018, quando entrei na faculdade para estudar Análise e Desenvolvimento de Sistemas. Durante o curso, fui exposto à lógica de programação, estruturas de dados, desenvolvimento web e outras disciplinas, e comecei a me interessar cada vez mais pela área.",
+    "paragraphTwo": "Tive o privilégio de trabalhar em uma empresa de soluções de software que atendia a um órgão governamental, em uma empresa de logística e em uma multinacional de serviços de TI que também prestava serviços para um órgão governamental.",
+    "paragraphThree": "Aqui estão algumas tecnologias com as quais tenho trabalhado:"
+  },
+  "experience": {
+    "title": "Onde trabalhei",
+    "sonda": {
+      "title": "Desenvolvedor de Software 2",
+      "period": "Janeiro 2023 - Julho 2024 (1.5 anos)",
+      "descriptionOne": "Desenvolvi aplicações web utilizando React, TypeScript, Tailwind, React Hook Form e um pouco de Laravel no back-end.",
+      "descriptionTwo": "Implementei práticas de código limpo e refatoração, melhorando a manutenção do código e reduzindo erros.",
+      "descriptionThree": "Participei das metodologias SCRUM, incluindo sprints, planejamentos e revisões."
+    },
+    "jsl": {
+      "title": "Desenvolvedor Full-stack",
+      "period": "Julho 2021 - Janeiro 2023 (1.6 anos)",
+      "descriptionOne": "Desenvolvi e mantive o principal sistema da filial utilizando PHP, React, Semantic UI, jQuery, ApexCharts e outras bibliotecas.",
+      "descriptionTwo": "Realizei análise, integração e manipulação de dados provenientes de APIs externas.",
+      "descriptionThree": "Gerenciei versionamento e controle de código, garantindo a integridade e organização do desenvolvimento."
+    },
+    "vert": {
+      "title": "Analista de Sistemas Júnior",
+      "period": "Junho 2020 - Setembro 2020 (0.3 anos)",
+      "descriptionOne": "Desenvolvi interfaces modernas e dinâmicas usando React e bibliotecas complementares.",
+      "descriptionTwo": "Atualizei e otimizei sistemas existentes, garantindo melhor desempenho e usabilidade.",
+      "descriptionThree": "Realizei manutenção e personalização de plataformas CMS, com foco em Joomla, para atender às necessidades específicas dos projetos."
+    }
+  },
+  "projects": {
+    "title": "Alguns projetos que desenvolvi",
+    "moreComin": "mais novidades chegando!",
+    "whatsnew": {
+      "title": "What's New",
+      "description": "Um sistema de notícias que permite leitura, criação, edição e exclusão de artigos, organizados por equipes. Cada equipe gerencia seus membros e pode convidar novos integrantes. Estatísticas incluem taxa de curtidas, visualizações, notícias mais populares e principais colaboradores."
+    },
+    "couplespace": {
+      "title": "Couplespace",
+      "description": "Um aplicativo web para casais demonstrarem seu amor. Faça declarações com palavras, imagens e vídeos. Faça login com sua conta do Google e gere um QR Code para sua própria página."
+    },
+    "bookly": {
+      "title": "Bookly",
+      "description": "Um aplicativo de agendamento de compromissos para consumidores e profissionais. Como profissional, organize e gerencie seus agendamentos. Como consumidor, encontre profissionais, solicite horários e faça avaliações."
+    },
+    "mumair": {
+      "title": "Mumair Portfolio",
+      "description": "Uma landing page simples de portfólio desenvolvida para aprimorar meu conhecimento em Styled-Components."
+    }
+  },
+  "contact": {
+    "title": "O Que Vem a Seguir?",
+    "subtext": "Entre em contato",
+    "paragraph": "Atualmente, estou em busca de uma nova oportunidade, então meu e-mail está sempre aberto. Se você tiver alguma dúvida ou apenas quiser dizer oi, farei o meu melhor para responder!",
+    "sayHello": "Diga Olá"
+  },
+  "footer": {
+    "text": "desenvolvido por"
+  }
+}

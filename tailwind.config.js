@@ -13,20 +13,33 @@ export default {
       fontFamily: {
         SFMono: ["SFMono", "sans-serif"],
       },
+      keyframes: {
+        "entrance-right": {
+          "0%": {
+            transform: "translateX(100vw)",
+          },
+          "100%": {
+            transform: "translateX(0)",
+          },
+        },
+        "exit-right": {
+          "0%": {
+            transform: "translateX(0)",
+          },
+          "100%": {
+            transform: "translateX(100vw)",
+          },
+        },
+      },
+      animation: {
+        "fade-in": "entrance-right .15s ease-in",
+        "fade-out": "exit-right .15s ease-out",
+      },
     },
   },
   extend: {
     scrollBehavior: {
       smooth: "smooth",
-    },
-    keyframes: {
-      fadeIn: {
-        "0%": { opacity: "0" },
-        "100%": { opacity: "1" },
-      },
-    },
-    animation: {
-      fadeIn: "fadeIn 0.5s ease-out",
     },
   },
 };

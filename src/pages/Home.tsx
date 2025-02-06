@@ -1,4 +1,5 @@
 import { ReactNode, useEffect, useRef, useState } from "react";
+import { useIntl } from "react-intl";
 
 interface AnimatedElementProps {
   children: ReactNode;
@@ -46,6 +47,9 @@ const AnimatedElement = ({
 };
 
 export function Home() {
+  const intl = useIntl();
+  const t = (id: string) => intl.formatMessage({ id });
+
   return (
     <>
       {/* Presentation */}
@@ -53,18 +57,15 @@ export function Home() {
         <AnimatedElement animationClasses="opacity-100 translate-y-0">
           <div className="w-full flex flex-col items-start justify-center gap-4 px-8 lg:px-0 lg:mx-8">
             <h1 className="font-SFMono text-sm text-blue-vibrant">
-              Hi, my name is
+              {t("hero.presentation")}
             </h1>
             <h2 className="text-7xl font-bold text-slate-200">
               Lucas Oliveira
             </h2>
             <h2 className="text-7xl font-bold text-slate-200">
-              I'm a Front-end Developer
+              {t("hero.role")}
             </h2>
-            <h3 className="w-full lg:w-1/2 text-xl">
-              I build things for the web and I'm currently looking for a new
-              challenge to relocate myself in the job market!
-            </h3>
+            <h3 className="w-full lg:w-1/2 text-xl">{t("hero.description")}</h3>
           </div>
         </AnimatedElement>
       </section>
@@ -73,27 +74,16 @@ export function Home() {
       <section id="about" className="px-8 lg:py-[100px] mx-auto max-w-[1000px]">
         <div className="flex items-start justify-start gap-2 mb-6">
           <span className="font-SFMono text-blue-vibrant text-xl">01. </span>
-          <h2 className="leading-9 font-bold text-3xl text-slate-200">About</h2>
+          <h2 className="leading-9 font-bold text-3xl text-slate-200">
+            {t("about.title")}
+          </h2>
         </div>
         <div className="space-y-8">
-          <p className="leading-6 text-xl">
-            Hello! My name is Lucas and I like to create visual things. My
-            interest in web development began in 2018 when I enrolled in college
-            to study systems analysis and development. While there, I was
-            exposed to programming logic, data structures, web development and
-            other subjects, and I began to become increasingly interested in the
-            area.
-          </p>
+          <p className="leading-6 text-xl">{t("about.paragraphOne")}</p>
 
-          <p className="leading-6 text-xl">
-            I had the privilege of working at a software solutions company that
-            served a government entity, a logistics company and a multinational
-            IT services company that also served a government entity.
-          </p>
+          <p className="leading-6 text-xl">{t("about.paragraphTwo")}</p>
 
-          <p className="leading-6 text-xl">
-            Here are some technologies I have been working with:
-          </p>
+          <p className="leading-6 text-xl">{t("about.paragraphThree")}</p>
 
           <ul className="list-none grid grid-cols-1 grid-rows-auto lg:grid-cols-3 lg:grid-rows-2 gap-2">
             <li className="flex items-center justify-start gap-4 p-4 border-px rounded-lg cursor-pointer border-transparent duration-200 hover:bg-secondary hover:border-tertiary group hover:text-blue-vibrant">
@@ -146,7 +136,7 @@ export function Home() {
         <div className="flex items-start justify-start gap-2 mb-6">
           <span className="font-SFMono text-blue-vibrant text-xl">02. </span>
           <h2 className="leading-9 font-bold text-3xl text-slate-200">
-            Where I've Worked
+            {t("experience.title")}
           </h2>
         </div>
         <div className="">
@@ -154,63 +144,29 @@ export function Home() {
             <li className="mb-10 ms-6 group duration-300 hover:text-blue-vibrant">
               <span className="absolute flex items-center justify-center w-3 h-3 bg-secondary rounded-full -start-1.5 duration-300 group-hover:bg-blue-vibrant" />
               <div className="flex items-center justify-start gap-4 mb-2">
-                <h3 className="leading-tight text-xl">Software Developer 2</h3>
+                <h3 className="leading-tight text-xl">
+                  {t("experience.sonda.title")}
+                </h3>
                 <span className="text-xl text-blue-vibrant">@Sonda IT</span>
               </div>
               <span className="text-xs font-SFMono">
-                January 2023 - July 2024 (1.5 yrs)
+                {t("experience.sonda.period")}
               </span>
 
               <ul className="mt-5 space-y-2">
                 <li className="flex items-center justify-start gap-2 pl-7 relative">
                   <span className="before:content-['▹'] before:absolute before:left-0">
-                    Developed web applications using React, TypeScript,
-                    Tailwind, React Hook Form and a bit of Laravel on the
-                    back-end.
+                    {t("experience.sonda.descriptionOne")}
                   </span>
                 </li>
                 <li className="flex items-center justify-start gap-2 pl-7 relative">
                   <span className="before:content-['▹'] before:absolute before:left-0">
-                    Implemented clean code and refactoring practices, improving
-                    maintainability and reducing errors
+                    {t("experience.sonda.descriptionTwo")}
                   </span>
                 </li>
                 <li className="flex items-center justify-start gap-2 pl-7 relative">
                   <span className="before:content-['▹'] before:absolute before:left-0">
-                    Participation in SCRUM methodologies, including sprints,
-                    plannings, and reviews.
-                  </span>
-                </li>
-              </ul>
-            </li>
-            <li className="mb-10 ms-6 group duration-300 hover:text-blue-vibrant">
-              <span className="absolute flex items-center justify-center w-3 h-3 bg-secondary rounded-full -start-1.5 duration-300 group-hover:bg-blue-vibrant" />
-              <div className="flex items-center justify-start gap-4 mb-2">
-                <h3 className="leading-tight text-xl">Full-stack Developer</h3>
-                <span className="text-xl text-blue-vibrant">@JSL S/A</span>
-              </div>
-              <span className="text-xs font-SFMono">
-                July 2021 - January 2024 (1.6 yrs)
-              </span>
-
-              <ul className="mt-5 space-y-2">
-                <li className="flex items-center justify-start gap-2 pl-7 relative">
-                  <span className="before:content-['▹'] before:absolute before:left-0">
-                    Developed and maintained the main system using on the branch
-                    using PHP, React, Semantic UI, jQuery, Apexcharts and other
-                    libraries.
-                  </span>
-                </li>
-                <li className="flex items-center justify-start gap-2 pl-7 relative">
-                  <span className="before:content-['▹'] before:absolute before:left-0">
-                    Analysis, integration, and manipulation of data from
-                    external APIs.
-                  </span>
-                </li>
-                <li className="flex items-center justify-start gap-2 pl-7 relative">
-                  <span className="before:content-['▹'] before:absolute before:left-0">
-                    Code versioning management and control, ensuring development
-                    integrity and organization.
+                    {t("experience.sonda.descriptionThree")}
                   </span>
                 </li>
               </ul>
@@ -219,31 +175,58 @@ export function Home() {
               <span className="absolute flex items-center justify-center w-3 h-3 bg-secondary rounded-full -start-1.5 duration-300 group-hover:bg-blue-vibrant" />
               <div className="flex items-center justify-start gap-4 mb-2">
                 <h3 className="leading-tight text-xl">
-                  Junior Systems Analyst
+                  {t("experience.jsl.title")}
                 </h3>
-                <span className="text-xl text-blue-vibrant">@Vert IT</span>
+                <span className="text-xl text-blue-vibrant">@JSL S/A</span>
               </div>
               <span className="text-xs font-SFMono">
-                June 2020 - September 2020 (0.3 yrs)
+                {t("experience.jsl.period")}
               </span>
 
               <ul className="mt-5 space-y-2">
                 <li className="flex items-center justify-start gap-2 pl-7 relative">
                   <span className="before:content-['▹'] before:absolute before:left-0">
-                    Development of modern and dynamic interfaces using React and
-                    complementary libraries.
+                    {t("experience.jsl.descriptionOne")}
                   </span>
                 </li>
                 <li className="flex items-center justify-start gap-2 pl-7 relative">
                   <span className="before:content-['▹'] before:absolute before:left-0">
-                    Updating and optimizing existing systems, ensuring
-                    performance and usability.
+                    {t("experience.jsl.descriptionTwo")}
                   </span>
                 </li>
                 <li className="flex items-center justify-start gap-2 pl-7 relative">
                   <span className="before:content-['▹'] before:absolute before:left-0">
-                    Maintenance and customization of CMS platforms, focusing on
-                    Joomla, to meet the specific needs of projects.
+                    {t("experience.jsl.descriptionThree")}
+                  </span>
+                </li>
+              </ul>
+            </li>
+            <li className="mb-10 ms-6 group duration-300 hover:text-blue-vibrant">
+              <span className="absolute flex items-center justify-center w-3 h-3 bg-secondary rounded-full -start-1.5 duration-300 group-hover:bg-blue-vibrant" />
+              <div className="flex items-center justify-start gap-4 mb-2">
+                <h3 className="leading-tight text-xl">
+                  {t("experience.vert.title")}
+                </h3>
+                <span className="text-xl text-blue-vibrant">@Vert IT</span>
+              </div>
+              <span className="text-xs font-SFMono">
+                {t("experience.vert.period")}
+              </span>
+
+              <ul className="mt-5 space-y-2">
+                <li className="flex items-center justify-start gap-2 pl-7 relative">
+                  <span className="before:content-['▹'] before:absolute before:left-0">
+                    {t("experience.vert.descriptionOne")}
+                  </span>
+                </li>
+                <li className="flex items-center justify-start gap-2 pl-7 relative">
+                  <span className="before:content-['▹'] before:absolute before:left-0">
+                    {t("experience.vert.descriptionTwo")}
+                  </span>
+                </li>
+                <li className="flex items-center justify-start gap-2 pl-7 relative">
+                  <span className="before:content-['▹'] before:absolute before:left-0">
+                    {t("experience.vert.descriptionThree")}
                   </span>
                 </li>
               </ul>
@@ -261,7 +244,7 @@ export function Home() {
           <div className="flex items-start justify-start gap-2 mb-6">
             <span className="font-SFMono text-blue-vibrant text-xl">03. </span>
             <h2 className="leading-9 font-bold text-3xl text-slate-200">
-              Some Things I've Built
+              {t("projects.title")}
             </h2>
           </div>
 
@@ -283,10 +266,7 @@ export function Home() {
                   />
                 </a>
                 <div className="p-6 bg-secondary rounded-b-md w-full lg:w-[550px] shadow-lg">
-                  The news system allows reading, creating, editing, and
-                  deleting news articles, organized by teams. Each team manages
-                  its members and can invite new ones. Statistics include like
-                  rate, views, most popular news, and top contributors.
+                  {t("projects.whatsnew.description")}
                 </div>
                 <div className="flex flex-wrap items-center justify-center gap-4 mt-4 text-sm">
                   <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
@@ -341,11 +321,7 @@ export function Home() {
                     What's New
                   </a>
                   <div className="p-6 bg-secondary rounded-md w-[550px] shadow-lg">
-                    The news system allows reading, creating, editing, and
-                    deleting news articles, organized by teams. Each team
-                    manages its members and can invite new ones. Statistics
-                    include like rate, views, most popular news, and top
-                    contributors.
+                    {t("projects.whatsnew.description")}
                   </div>
                   <div className="max-w-[550px] flex flex-wrap items-center justify-start gap-4 mt-4 text-sm">
                     <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
@@ -419,10 +395,7 @@ export function Home() {
                   />
                 </a>
                 <div className="p-6 bg-secondary rounded-b-md w-full lg:w-[550px] shadow-lg">
-                  A web app for couples to show their love. Make declarations
-                  with words, images and videos. Make login with your Google
-                  account and receive, create and receive a QR Code for your own
-                  page.
+                  {t("projects.couplespace.description")}
                 </div>
                 <div className="flex flex-wrap items-center justify-center gap-4 mt-4 text-sm">
                   <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
@@ -468,10 +441,7 @@ export function Home() {
                     Couplespace
                   </a>
                   <div className="p-6 bg-secondary rounded-md w-full lg:w-[550px] shadow-lg">
-                    A web app for couples to show their love. Make declarations
-                    with words, images and videos. Make login with your Google
-                    account and receive, create and receive a QR Code for your
-                    own page.
+                    {t("projects.couplespace.description")}
                   </div>
                   <div className="flex flex-wrap items-center justify-end gap-4 mt-4 text-sm">
                     <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
@@ -520,10 +490,7 @@ export function Home() {
                   />
                 </a>
                 <div className="p-6 bg-secondary rounded-b-md w-full lg:w-[550px] shadow-lg">
-                  A general appointment scheduling web app for both consumers
-                  and professionals. As a professional, organize your
-                  appointments and manage your appointments. As a consumer, find
-                  professionals, request appointments and make reviews.
+                  {t("projects.bookly.description")}
                 </div>
                 <div className="flex flex-wrap items-center justify-center gap-4 mt-4 text-sm">
                   <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
@@ -560,10 +527,7 @@ export function Home() {
                     Bookly
                   </a>
                   <div className="p-6 bg-secondary rounded-md w-[550px] shadow-lg">
-                    A general appointment scheduling web app for both consumers
-                    and professionals. As a professional, organize your
-                    appointments and manage your appointments. As a consumer,
-                    find professionals, request appointments and make reviews.
+                    {t("projects.bookly.description")}
                   </div>
                   <div className="flex flex-wrap items-center justify-start gap-4 mt-4 text-sm">
                     <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
@@ -622,8 +586,7 @@ export function Home() {
                   />
                 </a>
                 <div className="p-6 bg-secondary rounded-b-md w-full lg:w-[550px] shadow-lg">
-                  A simple portfolio landing page develop to improve my
-                  Styled-Components knowledge.
+                  {t("projects.mumair.description")}
                 </div>
                 <div className="flex flex-wrap items-center justify-center gap-4 mt-4 text-sm">
                   <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
@@ -663,8 +626,7 @@ export function Home() {
                     Mumair Portfolio
                   </a>
                   <div className="p-6 bg-secondary rounded-md w-full lg:w-[550px] shadow-lg">
-                    A simple portfolio landing page develop to improve my
-                    Styled-Components knowledge.
+                    {t("projects.mumair.description")}
                   </div>
                   <div className="flex flex-wrap items-center justify-end gap-4 mt-4 text-sm">
                     <span className="duration-300 hover:text-blue-vibrant cursor-pointer">
@@ -690,7 +652,7 @@ export function Home() {
 
           <div className="w-full flex items-center justify-center">
             <p className="w-full lg:w-1/2 mt-32 py-4 rounded-md border-2 border-dashed border-secondary bg-secondary/25 text-center shadow-lg font-bold font-SFMono">
-              more coming up!
+              {t("projects.moreComin")}
             </p>
           </div>
         </AnimatedElement>
@@ -701,20 +663,18 @@ export function Home() {
         <AnimatedElement animationClasses="opacity-100 translate-y-0">
           <div className=" h-[80vh] flex flex-col items-center justify-center gap-8 text-center">
             <span className="font-SFMono text-blue-vibrant text-xl">
-              04. What's Next?
+              04. {t("contact.title")}
             </span>
-            <h2 className="font-bold text-7xl text-slate-200">Get in Touch</h2>
-            <p className="text-xl">
-              I'm currently looking for a new opportunity, so my email inbox is
-              always open. If you have any questions or just want to say hi,
-              I'll do my best to answer!
-            </p>
+            <h2 className="font-bold text-7xl text-slate-200">
+              {t("contact.subtext")}
+            </h2>
+            <p className="text-xl">{t("contact.paragraph")}</p>
 
             <a
               href="mailto:restlucas.dev@gmail.com"
               className="transition ease-in-out rounded-md py-4 px-6 border-2 border-blue-vibrant text-blue-vibrant duration-300 hover:bg-blue-vibrant hover:text-background hover:scale-110 hover:-skew-y-2"
             >
-              Say Hello
+              {t("contact.sayHello")}
             </a>
           </div>
         </AnimatedElement>

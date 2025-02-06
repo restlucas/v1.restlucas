@@ -1,0 +1,74 @@
+{
+  "locale": "en",
+  "navigation": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact",
+    "resume": "Resume"
+  },
+  "hero": {
+    "presentation": "Hi, my name is",
+    "role": "I'm a Front-End Developer",
+    "description": "I build things for the web and I'm currently looking for a new challenge to relocate myself in the job market!"
+  },
+  "about": {
+    "title": "About",
+    "paragraphOne": "Hello! My name is Lucas and I like to create visual things. My interest in web development began in 2018 when I enrolled in college to study Systems Analysis and Development. During the course, I was exposed to programming logic, data structures, web development, and other subjects, and I became increasingly interested in the field.",
+    "paragraphTwo": "I had the privilege of working at a software solutions company that served a government entity, a logistics company, and a multinational IT services company that also served a government entity.",
+    "paragraphThree": "Here are some technologies I have been working with:"
+  },
+  "experience": {
+    "title": "Where I've Worked",
+    "sonda": {
+      "title": "Software Developer 2",
+      "period": "January 2023 - July 2024 (1.5 yrs)",
+      "descriptionOne": "Developed web applications using React, TypeScript, Tailwind, React Hook Form, and a bit of Laravel on the back-end.",
+      "descriptionTwo": "Implemented clean code and refactoring practices, improving maintainability and reducing errors.",
+      "descriptionThree": "Participated in SCRUM methodologies, including sprints, planning, and reviews."
+    },
+    "jsl": {
+      "title": "Full-stack Developer",
+      "period": "July 2021 - January 2024 (1.6 yrs)",
+      "descriptionOne": "Developed and maintained the branch's main system using PHP, React, Semantic UI, jQuery, ApexCharts, and other libraries.",
+      "descriptionTwo": "Performed analysis, integration, and manipulation of data from external APIs.",
+      "descriptionThree": "Managed version control, ensuring development integrity and organization."
+    },
+    "vert": {
+      "title": "Junior Systems Analyst",
+      "period": "June 2020 - September 2020 (0.3 yrs)",
+      "descriptionOne": "Developed modern and dynamic interfaces using React and complementary libraries.",
+      "descriptionTwo": "Updated and optimized existing systems, ensuring performance and usability.",
+      "descriptionThree": "Performed maintenance and customization of CMS platforms, focusing on Joomla, to meet specific project needs."
+    }
+  },
+  "projects": {
+    "title": "Some Things I've Built",
+    "moreComin": "more coming up!",
+    "whatsnew": {
+      "title": "What's New",
+      "description": "A news system that allows reading, creating, editing, and deleting articles, organized by teams. Each team manages its members and can invite new ones. Statistics include like rate, views, most popular news, and top contributors."
+    },
+    "couplespace": {
+      "title": "Couplespace",
+      "description": "A web app for couples to show their love. Make declarations with words, images, and videos. Log in with your Google account and generate a QR Code for your own page."
+    },
+    "bookly": {
+      "title": "Bookly",
+      "description": "A general appointment scheduling web app for both consumers and professionals. As a professional, organize and manage your appointments. As a consumer, find professionals, request appointments, and leave reviews."
+    },
+    "mumair": {
+      "title": "Mumair Portfolio",
+      "description": "A simple portfolio landing page developed to improve my Styled-Components knowledge."
+    }
+  },
+  "contact": {
+    "title": "What's Next?",
+    "subtext": "Get in Touch",
+    "paragraph": "I'm currently looking for a new opportunity, so my email inbox is always open. If you have any questions or just want to say hi, I'll do my best to answer!",
+    "sayHello": "Say Hello"
+  },
+  "footer": {
+    "text": "developed by"
+  }
+}
