@@ -20,6 +20,16 @@
   },
   "experience": {
     "title": "Onde trabalhei",
+    "freelance": {
+      "title": "Freelancer",
+      "period": "Março 2025 - Até o momento",
+      "descriptionOne": "Responsável pelo desenvolvimento e manutenção de toda a camada de front-end de um produto financeiro, garantindo responsividade, performance e arquitetura limpa.",
+      "descriptionTwo": "Construção de interfaces utilizando React, TypeScript, Vite, Tailwind CSS, shadcn/ui, React Hook Form, Zod e TanStack Query.",
+      "descriptionThree": "Integração com back-end desenvolvido em Laravel e Inertia.js, proporcionando uma experiência full-stack fluida.",
+      "descriptionFour": "Aplicação de princípios de clean code, padrões de componentização reutilizáveis e estrutura escalável alinhada às melhores práticas de front-end.",
+      "descriptionFive": "Participação em decisões arquiteturais e de UI/UX, contribuindo para a criação e manutenção de um design system personalizado.",
+      "descriptionSix": "Garantia de alta qualidade no código, conformidade com padrões de acessibilidade e consistência na interface em diferentes dispositivos e tamanhos de tela."
+    },
     "sonda": {
       "title": "Desenvolvedor de Software 2",
       "period": "Janeiro 2023 - Julho 2024 (1.5 anos)",

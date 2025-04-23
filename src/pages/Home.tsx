@@ -145,6 +145,51 @@ export function Home() {
               <span className="absolute flex items-center justify-center w-3 h-3 bg-secondary rounded-full -start-1.5 duration-300 group-hover:bg-blue-vibrant" />
               <div className="flex items-center justify-start gap-4 mb-2">
                 <h3 className="leading-tight text-xl">
+                  {t("experience.freelance.title")}
+                </h3>
+                <span className="text-xl text-blue-vibrant">@Freelancer</span>
+              </div>
+              <span className="text-xs font-SFMono">
+                {t("experience.freelance.period")}
+              </span>
+
+              <ul className="mt-5 space-y-2">
+                <li className="flex items-center justify-start gap-2 pl-7 relative">
+                  <span className="before:content-['▹'] before:absolute before:left-0">
+                    {t("experience.freelance.descriptionOne")}
+                  </span>
+                </li>
+                <li className="flex items-center justify-start gap-2 pl-7 relative">
+                  <span className="before:content-['▹'] before:absolute before:left-0">
+                    {t("experience.freelance.descriptionTwo")}
+                  </span>
+                </li>
+                <li className="flex items-center justify-start gap-2 pl-7 relative">
+                  <span className="before:content-['▹'] before:absolute before:left-0">
+                    {t("experience.freelance.descriptionThree")}
+                  </span>
+                </li>
+                <li className="flex items-center justify-start gap-2 pl-7 relative">
+                  <span className="before:content-['▹'] before:absolute before:left-0">
+                    {t("experience.freelance.descriptionFour")}
+                  </span>
+                </li>
+                <li className="flex items-center justify-start gap-2 pl-7 relative">
+                  <span className="before:content-['▹'] before:absolute before:left-0">
+                    {t("experience.freelance.descriptionFive")}
+                  </span>
+                </li>
+                <li className="flex items-center justify-start gap-2 pl-7 relative">
+                  <span className="before:content-['▹'] before:absolute before:left-0">
+                    {t("experience.freelance.descriptionSix")}
+                  </span>
+                </li>
+              </ul>
+            </li>
+            <li className="mb-10 ms-6 group duration-300 hover:text-blue-vibrant">
+              <span className="absolute flex items-center justify-center w-3 h-3 bg-secondary rounded-full -start-1.5 duration-300 group-hover:bg-blue-vibrant" />
+              <div className="flex items-center justify-start gap-4 mb-2">
+                <h3 className="leading-tight text-xl">
                   {t("experience.sonda.title")}
                 </h3>
                 <span className="text-xl text-blue-vibrant">@Sonda IT</span>
