@@ -20,6 +20,17 @@
   },
   "experience": {
     "title": "Where I've Worked",
+    "sgm": {
+      "title": "Software Developer",
+      "period": "March 2025 - Present",
+      "descriptionOne": "Responsible for designing the front-end architecture of MVPs with multi-tenancy (SaaS) support, ensuring scalability and maintainability from the ground up.",
+      "descriptionTwo": "Developed modern and responsive user interfaces using Next.js, Tailwind CSS, shadcn/ui, and TypeScript, with a strong focus on performance and accessibility.",
+      "descriptionThree": "Integrated Laravel REST APIs, handling authentication flows, loading states, and error management using TanStack Query.",
+      "descriptionFour": "Implemented real-time communication features via WebSockets, enhancing user interaction and responsiveness.",
+      "descriptionFive": "Managed cloud file uploads and access using Amazon S3, including permission control and performance optimization.",
+      "descriptionSix": "Contributed to the maintenance and improvement of legacy systems, performing refactoring, bug fixing, and ongoing enhancements based on best development practices.",
+      "descriptionSeven": "Collaborated with teamworks to continuously deliver and iterate features within agile workflows."
+    },
     "freelance": {
       "title": "Freelancer",
       "period": "March 2025 - Present",

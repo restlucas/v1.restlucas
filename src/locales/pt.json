@@ -20,6 +20,17 @@
   },
   "experience": {
     "title": "Onde trabalhei",
+    "sgm": {
+      "title": "Developer de Software",
+      "period": "Março 2025 - Até o momento",
+      "descriptionOne": "Responsável por projetar a arquitetura do front-end de MVPs com suporte a multi-tenancy (SaaS), garantindo escalabilidade e manutenibilidade desde o início.",
+      "descriptionTwo": "Desenvolvimento de interfaces modernas e responsivas utilizando Next.js, Tailwind CSS, shadcn/ui e TypeScript, com forte foco em performance e acessibilidade.",
+      "descriptionThree": "Integração com APIs REST em Laravel, lidando com fluxos de autenticação, estados de carregamento e tratamento de erros utilizando TanStack Query.",
+      "descriptionFour": "Implementação de funcionalidades de comunicação em tempo real com WebSockets, melhorando a interação e a responsividade da aplicação.",
+      "descriptionFive": "Gerenciamento de uploads e acesso a arquivos em nuvem com Amazon S3, incluindo controle de permissões e otimização de desempenho.",
+      "descriptionSix": "Contribuição na manutenção e evolução de sistemas legados, realizando refatorações, correções de bugs e melhorias contínuas com base em boas práticas de desenvolvimento.",
+      "descriptionSeven": "Colaboração com a equipe para entrega contínua e iteração de funcionalidades dentro de fluxos de trabalho ágeis."
+    },
     "freelance": {
       "title": "Freelancer",
       "period": "Março 2025 - Até o momento",
